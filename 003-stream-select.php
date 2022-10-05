@@ -8,7 +8,6 @@ $procs[] = proc_open([PHP_BINARY, '-r', 'sleep(1); echo "c";'], $descriptorspec,
 $stream1 = $pipes1[1];
 $stream2 = $pipes2[1];
 $stream3 = $pipes3[1];
-$counter = 0;
 
 $read = [$stream1, $stream2, $stream3];
 $write = $except = null;
